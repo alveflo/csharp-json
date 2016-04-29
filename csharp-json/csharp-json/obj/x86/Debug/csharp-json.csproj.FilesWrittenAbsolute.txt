@@ -1,0 +1,5 @@
+/home/victor/Documents/csharp-json/csharp-json/csharp-json/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/victor/Documents/csharp-json/csharp-json/csharp-json/bin/Debug/csharp-json.exe.mdb
+/home/victor/Documents/csharp-json/csharp-json/csharp-json/bin/Debug/csharp-json.exe
+/home/victor/Documents/csharp-json/csharp-json/csharp-json/obj/x86/Debug/csharp-json.exe
+/home/victor/Documents/csharp-json/csharp-json/csharp-json/obj/x86/Debug/csharp-json.exe.mdb
