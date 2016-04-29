@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Dynamic;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CsharpJson
 {
@@ -37,6 +38,24 @@ namespace CsharpJson
 		{
 			dictionary[binder.Name] = value;
 			return true;
+		}
+
+		private string ParseValue(object value)
+		{
+			if (value is DynamicGracefulDictionary) {
+				return value.ToString ();
+			}
+			if (value is string) {
+				return string.Format ("\"{0}\"", value);
+			}
+			return value.ToString();
+		}
+
+		public override string ToString ()
+		{
+			var entries = this.dictionary.Select(d =>
+				string.Format("\"{0}\": {1}", d.Key, string.Join(",", ParseValue(d.Value))));
+			return "{" + string.Join(",", entries) + "}";
 		}
 	}
 }

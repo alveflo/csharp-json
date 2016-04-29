@@ -11,8 +11,9 @@ namespace csharpjson
 			obj.foo = "Foo!";
 			obj.bar = Json.New ();
 			obj.bar.baz = "Bar!";
-			Console.WriteLine (obj.foo);
-			Console.WriteLine (obj.bar.baz);
+			obj.arr = new int[] { 1,2,3 };
+			Console.WriteLine (obj.ToString());
+			Console.ReadKey ();
 		}
 	}
 }

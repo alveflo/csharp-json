@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace CsharpJson
 {
 	public class Json
 	{
-		public static string Stringify(Json json)
+		public static string Stringify(DynamicGracefulDictionary json)
 		{
-			throw new NotImplementedException ();
+			return json.ToString ();
 		}
 
 		public static Json Parse(string jsonString)
